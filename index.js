@@ -52,5 +52,11 @@ const categorizeProducts = (products) => {
         if (!categories[key]) {
           categories[key] = [];
         }
-    })
+
+        // adiciona o produto na categoria correspondente
+        categories[key].push({
+            title: product.title,
+            supermarket: product.supermarket,
+        });
+    });
 }
