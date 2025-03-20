@@ -18,4 +18,11 @@ const generateKey = (title) => {
 
     // encontra o tipo específico no título, caso exista
     const tipo = tipos.find(t => lowerTitle.includes(t)) || '';
+
+    // extrai o tamanho (ex: "1l", "5kg") do título
+    const tamanho = lowerTitle.match(/(\d+(\.\d+)?(kg|l))/)?.[0] || '';
+
+    // encontra a marca no título, caso esteja presente na lista
+    const marca = lowerTitle.match(/(piracanjuba|italac|parmalat|tio joão|camil)/)?.[0] || '';
+
 }
