@@ -44,4 +44,13 @@ const generateKey = (title) => {
 const categorizeProducts = (products) => {
     const categories = {};
     
+    products.forEach((product) => {
+        // gera uma chave única para cada produto
+        const key = generateKey(product.title);
+    
+        // inicializa categoria se ainda não existir
+        if (!categories[key]) {
+          categories[key] = [];
+        }
+    })
 }
