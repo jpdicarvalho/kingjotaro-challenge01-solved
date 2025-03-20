@@ -65,7 +65,7 @@ Alguns produtos podem usar sinônimos comuns nas suas descrições, gerando cate
 1. Clone este repositório:
 
 ```bash
-git clone [url-do-seu-repositório]
+git clone https://github.com/jpdicarvalho/kingjotaro-challenge01-solved.git
 ```
 
 2. Instale as dependências (se houver):
@@ -74,9 +74,7 @@ git clone [url-do-seu-repositório]
 npm install
 ```
 
-3. Execute a categorização dos produtos a partir de um arquivo JSON:
-
-Coloque seu arquivo JSON com os produtos (`data01.json`) no diretório do projeto e execute:
+3. Execute a solução:
 
 ```bash
 node index.js
