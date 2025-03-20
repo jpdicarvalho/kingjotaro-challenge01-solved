@@ -25,4 +25,17 @@ const generateKey = (title) => {
     // encontra a marca no título, caso esteja presente na lista
     const marca = lowerTitle.match(/(piracanjuba|italac|parmalat|tio joão|camil)/)?.[0] || '';
 
+    // gera um nome genérico removendo tipo, tamanho e marca
+    const nomeGenerico = lowerTitle
+    .replace(tipo, '')
+    .replace(tamanho, '')
+    .replace(marca, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(' ')
+    .sort() // ordena palavras para garantir consistência na chave
+    .join(' ');
+
+    // retorna chave composta para facilitar agrupamento por similaridade
+    return [nomeGenerico, marca, tipo, tamanho].filter(Boolean).join('|');
 }
