@@ -59,4 +59,11 @@ const categorizeProducts = (products) => {
             supermarket: product.supermarket,
         });
     });
+
+    // converte o objeto em um array estruturado para retorno
+    return Object.entries(categories).map(([_, products]) => ({
+        category: products[0].title,
+        count: products.length,
+        products,
+    }));
 }
