@@ -39,3 +39,9 @@ const generateKey = (title) => {
     // retorna chave composta para facilitar agrupamento por similaridade
     return [nomeGenerico, marca, tipo, tamanho].filter(Boolean).join('|');
 }
+
+// Função que categoriza produtos com base na chave gerada acima
+const categorizeProducts = (products) => {
+    const categories = {};
+    
+}
