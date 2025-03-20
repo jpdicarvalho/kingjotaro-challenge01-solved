@@ -71,3 +71,6 @@ const categorizeProducts = (products) => {
 // Lendo os dados do arquivo data01.json
 const input = JSON.parse(fs.readFileSync('data01.json', 'utf8'));
 const categorized = categorizeProducts(input);
+
+// Exibindo o resultado categorizado no terminal de forma organizada
+console.log(JSON.stringify(categorized, null, 2));
