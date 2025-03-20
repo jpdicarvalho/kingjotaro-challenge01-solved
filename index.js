@@ -13,4 +13,9 @@ const generateKey = (title) => {
     .replace(/\s+/g, ' ') // remove múltiplos espaços
     .trim();
 
+    // lista com tipos específicos para facilitar categorização
+    const tipos = ['integral', 'desnatado', 'semidesnatado', 'branco', 'carioca', 'sem lactose'];
+
+    // encontra o tipo específico no título, caso exista
+    const tipo = tipos.find(t => lowerTitle.includes(t)) || '';
 }
