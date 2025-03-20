@@ -128,5 +128,3 @@ A solução espera um arquivo JSON no seguinte formato:
 ## Considerações finais
 
 A solução apresentada é eficaz na categorização precisa e inteligente dos produtos de supermercado, considerando cuidadosamente as variações comuns encontradas em descrições de produtos reais.
-
-Sinta-se à vontade para contribuir ou sugerir melhorias.
