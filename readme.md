@@ -1,6 +1,6 @@
 # Categorizador Inteligente de Produtos
 
-Este projeto implementa uma solução robusta e inteligente em Node.js para categorizar produtos de supermercado, identificando automaticamente itens equivalentes mesmo que apresentem pequenas variações na descrição.
+Este projeto implementa uma solução inteligente em Node.js para categorizar produtos de supermercado, identificando automaticamente itens equivalentes mesmo que apresentem pequenas variações na descrição.
 
 ## Objetivo
 
